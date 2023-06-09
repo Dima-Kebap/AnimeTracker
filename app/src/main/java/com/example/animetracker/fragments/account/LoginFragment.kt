@@ -78,7 +78,7 @@ private fun getClient(): GoogleSignInClient{
             var email = accEmail.text.toString()
             val pass = accPassword.text.toString()
             if (email != "" && pass != "") {
-                email += "@gmail.com"
+                //email += "@gmail.com"
                 auth.signInWithEmailAndPassword(email, pass).addOnCompleteListener {
                     if (it.isSuccessful)  //якщо користувач успішно залогінився
                         userLogined()
@@ -97,9 +97,9 @@ private fun getClient(): GoogleSignInClient{
         butRegistration.setOnClickListener {
             var login = accEmail.text.toString()
             val pass = accPassword.text.toString()
-            Toast.makeText(context, "$login,  $pass", Toast.LENGTH_SHORT).show()
+            //Toast.makeText(context, "$login,  $pass", Toast.LENGTH_SHORT).show()
             if (login != "" && pass != "") {
-                login += "@gmail.com"
+                //login += "@gmail.com"
                 auth.createUserWithEmailAndPassword(login, pass).addOnCompleteListener {
                     if (it.isSuccessful) //якщо користувач успішно зареєструвався
                         userLogined()
