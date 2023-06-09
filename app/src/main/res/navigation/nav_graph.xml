@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navigation_search">
+
+    <fragment
+        android:id="@+id/navigation_search"
+        android:name="com.example.animetracker.fragments.SearchFragment"
+        tools:layout="@layout/fragment_search">
+        <action
+            android:id="@+id/action_navigation_search_to_navigation_my_lists"
+            app:destination="@id/navigation_my_lists" />
+        <action
+            android:id="@+id/action_navigation_search_to_navigation_seasons"
+            app:destination="@id/navigation_seasonal" />
+        <action
+            android:id="@+id/action_navigation_search_to_navigation_aut"
+            app:destination="@id/navigation_aut" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_my_lists"
+        android:name="com.example.animetracker.fragments.myLists.MyListsFragment"
+        tools:layout="@layout/fragment_my_lists">
+        <action
+            android:id="@+id/action_navigation_my_lists_to_SearchFragment"
+            app:destination="@id/navigation_search" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_seasonal"
+        android:name="com.example.animetracker.fragments.seasonal.SeasonalFragment"
+        tools:layout="@layout/fragment_seasonal">
+        <action
+            android:id="@+id/action_navigation_seasonal_to_SearchFragment"
+            app:destination="@id/navigation_search" />
+        <action
+            android:id="@+id/action_navigation_seasonal_to_navigation_seasonal_anime"
+            app:destination="@id/navigation_seasonal_anime" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_seasons_list"
+        android:name="com.example.animetracker.fragments.seasonal.SeasonsListFragment"
+        tools:layout="@layout/fragment_seasons_list">
+        <action
+            android:id="@+id/action_SeasonsList_to_SeasonalAnime"
+            app:destination="@id/navigation_seasonal_anime" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/navigation_seasonal_anime"
+        android:name="com.example.animetracker.fragments.seasonal.SeasonalAnimeFragment"
+        tools:layout="@layout/fragment_seasonal_anime">
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_aut"
+        android:name="com.example.animetracker.fragments.account.AuthenticationFragment"
+        tools:layout="@layout/fragment_authentication">
+        <action
+            android:id="@+id/action_navigation_aut_to_navigation_search"
+            app:destination="@id/navigation_search" />
+    </fragment>
+
+</navigation>

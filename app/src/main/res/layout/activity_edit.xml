@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/editAnime"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:paddingStart="10dp"
+    android:paddingLeft="10dp"
+    android:paddingTop="10dp"
+    android:paddingEnd="10dp"
+    tools:context=".EditActivity">
+
+    <NumberPicker
+        android:id="@+id/episodePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="92dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <NumberPicker
+        android:id="@+id/ratingPicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="92dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/butBack"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="10dp"
+        android:background="@null"
+        android:contentDescription="@string/Previous_page"
+        android:onClick="butBack"
+        android:src="@drawable/back_arrow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:maxImageSize="60dp" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/idEdit"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="id"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/add99Watch"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/add99Watch"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/add99Watch" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/add99Watch"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:onClick="add33Dropped"-->
+<!--        android:text="add 33 Dropped"-->
+<!--        android:textColor="@color/Black"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.938"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/chipGroup" />-->
+
+    <Button
+        android:id="@+id/butDel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:onClick="deleteFromList"
+        android:text="Remove from list"
+        android:textColor="@color/Red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/butSave"
+        android:layout_width="118dp"
+        android:layout_height="68dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/GreenYellow"
+        android:onClick="editMyAnime"
+        android:text="Save"
+        android:textColor="@color/Black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:chipSpacingHorizontal="1dp"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/animeTitle"
+        app:singleSelection="true">
+
+        <com.google.android.material.chip.Chip
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="120dp"
+            android:layout_height="70dp"
+            android:text="@string/Watching_list"
+            android:textAlignment="center"
+            android:textColor="?android:textColor"
+            app:chipBackgroundColor="?android:windowBackground"
+            app:chipStrokeWidth="1dp" />
+
+        <com.google.android.material.chip.Chip
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="120dp"
+            android:layout_height="70dp"
+            android:text="@string/Completed_list"
+            android:textAlignment="center"
+            android:textColor="?android:textColor"
+            app:chipBackgroundColor="?android:windowBackground"
+            app:chipStrokeWidth="1dp" />
+
+        <com.google.android.material.chip.Chip
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="120dp"
+            android:layout_height="70dp"
+            android:text="@string/On_Hold_list"
+            android:textAlignment="center"
+            android:textColor="?android:textColor"
+            app:chipBackgroundColor="?android:windowBackground"
+            app:chipStrokeWidth="1dp" />
+
+        <com.google.android.material.chip.Chip
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="120dp"
+            android:layout_height="70dp"
+            android:text="@string/Dropped_list"
+            android:textAlignment="center"
+            android:textColor="?android:textColor"
+            app:chipBackgroundColor="?android:windowBackground"
+            app:chipStrokeWidth="1dp" />
+
+        <com.google.android.material.chip.Chip
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+
+            android:layout_width="120dp"
+            android:layout_height="70dp"
+            android:text="@string/Plan_to_Watch_list"
+            android:textAlignment="center"
+            android:textColor="?android:textColor"
+            app:chipBackgroundColor="?android:windowBackground"
+            app:chipStrokeWidth="1dp" />
+
+    </com.google.android.material.chip.ChipGroup>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="your\nprogress"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/episodePicker"
+        app:layout_constraintEnd_toEndOf="@+id/episodePicker"
+        app:layout_constraintStart_toStartOf="@+id/episodePicker" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="⭐️score⭐️"
+        app:layout_constraintBottom_toTopOf="@+id/ratingPicker"
+        app:layout_constraintEnd_toEndOf="@+id/ratingPicker"
+        app:layout_constraintStart_toStartOf="@+id/ratingPicker" />
+
+    <ProgressBar
+        android:id="@+id/episodesProgress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="320dp"
+        android:layout_height="32dp"
+        android:max="100"
+        android:progress="69"
+        android:progressDrawable="@drawable/episodes_progress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/progr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="69/100"
+        android:textColor="@color/Black"
+        app:layout_constraintBottom_toBottomOf="@+id/episodesProgress"
+        app:layout_constraintEnd_toEndOf="@+id/episodesProgress"
+        app:layout_constraintStart_toStartOf="@+id/episodesProgress"
+        app:layout_constraintTop_toTopOf="@+id/episodesProgress" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Progress"
+        app:layout_constraintBottom_toTopOf="@+id/episodesProgress"
+        app:layout_constraintEnd_toEndOf="@+id/episodesProgress"
+        app:layout_constraintStart_toStartOf="@+id/episodesProgress" />
+
+    <TextView
+        android:id="@+id/scoreDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ScoreDescription"
+        app:layout_constraintBottom_toBottomOf="@+id/ratingPicker"
+        app:layout_constraintStart_toEndOf="@+id/ratingPicker"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/animeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="&quot;anime title&quot;"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/butDel" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

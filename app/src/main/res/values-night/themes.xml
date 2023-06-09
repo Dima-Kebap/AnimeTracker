@@ -1,0 +1,35 @@
+<!--<resources xmlns:tools="http://schemas.android.com/tools">-->
+<!--    &lt;!&ndash; Base application theme. &ndash;&gt;-->
+<!--    <style name="Base.Theme.AnimeTracker" parent="Theme.Material3.DayNight.NoActionBar">-->
+<!--        &lt;!&ndash; Customize your dark theme here. &ndash;&gt;-->
+<!--        &lt;!&ndash; <item name="colorPrimary">@color/my_dark_primary</item> &ndash;&gt;-->
+<!--    </style>-->
+<!--    <style name="ThemeOverlay.AnimeTracker.FullscreenContainer" parent="">-->
+<!--        <item name="fullscreenBackgroundColor">@color/light_blue_900</item>-->
+<!--        <item name="fullscreenTextColor">@color/light_blue_A400</item>-->
+
+<!--    </style>-->
+<!--</resources>-->
+
+<resources xmlns:tools="http://schemas.android.com/tools">
+<!-- Base application theme. -->
+<style name="Theme.AnimeTracker" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <!-- Primary brand color. -->
+    <item name="colorPrimary">@color/MediumSpringGreen</item>
+    <item name="tint">@color/White</item>
+    <item name="android:textColor">@color/White</item>
+    <item name="android:textAllCaps">false</item>
+    <item name="android:windowBackground">@color/black_background</item>
+<!--    <item name="colorPrimaryVariant">@color/purple_700</item>-->
+    <item name="colorOnPrimary">@color/Black</item>
+    <!-- Secondary brand color. -->
+    <item name="colorSecondary">@color/DarkGreen</item>
+    <item name="colorSecondaryVariant">@color/teal_200</item>
+    <item name="colorOnSecondary">@color/White</item>
+    <!-- Status bar color. -->
+<!--    <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>-->
+    <item name="windowActionBar">false</item>
+    <item name="windowNoTitle">true</item>
+    <!-- Customize your theme here. -->
+</style>
+</resources>

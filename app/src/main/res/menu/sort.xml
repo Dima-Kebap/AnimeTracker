@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/sort_by_rait"
+        android:title="⭐️"/>
+    <item android:id="@+id/sort_by_userCount"
+        android:title="👤" />
+    <item android:id="@+id/sort_by_totalEpisodes"
+        android:title="@string/total_episodes" />
+    <item android:id="@+id/sort_by_startDate"
+        android:title="@string/start_date" />
+
+</menu>

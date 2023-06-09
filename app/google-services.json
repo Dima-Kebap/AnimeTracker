@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "491423191003",
+    "firebase_url": "https://animetracker-3b522-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "animetracker-3b522",
+    "storage_bucket": "animetracker-3b522.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:491423191003:android:ab54e7389ccc392bc321fe",
+        "android_client_info": {
+          "package_name": "com.example.animetracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "491423191003-omqab4bupsrta40bb7qrlemq2n0qi1m3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.animetracker",
+            "certificate_hash": "b0b2c53e974a1881ff55340b95029263c917b8f4"
+          }
+        },
+        {
+          "client_id": "491423191003-98hu1adq5hlmlbd17s5497vtmdaqnp26.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKOtw2kkiZTrIVfjzKe8H6_smv1oBpfgc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "491423191003-98hu1adq5hlmlbd17s5497vtmdaqnp26.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">AnimeTracker</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="next">Next</string>
+
+
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
+        volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
+        dui nec risus. Maecenas non sodales nisi, vel dictum dolor. Class aptent
+    </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="All_list">All</string>
+    <string name="Watching_list">Watching</string>
+    <string name="Completed_list">Completed</string>
+    <string name="On_Hold_list">On Hold</string>
+    <string name="Dropped_list">Dropped</string>
+    <string name="Plan_to_Watch_list">Plan to watch</string>
+    <string name="Previous_page">Previous page</string>
+    <string name="Refresh">Refresh page</string>
+    <string name="Filter_list">Filter this list</string>
+    <string name="Search_hint">🔍Search...🔍</string>
+    <string name="Previous_season">Previous</string>
+    <string name="This_season">This</string>
+    <string name="Next_season">Next</string>
+    <string name="Custom_season">Custom</string>
+    <string name="total_episodes">Total episodes</string>
+    <string name="start_date">Start date</string>
+    <string name="title_activity_account">AccountActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="no_internet">No internet connection</string>
+    <string name="confirmation">Are you sure about that?</string>
+
+</resources>

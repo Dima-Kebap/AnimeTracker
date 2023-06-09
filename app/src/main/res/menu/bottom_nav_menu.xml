@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_seasonal"
+        android:icon="@drawable/seasons"
+        android:title="Seasonal" />
+
+    <item
+        android:id="@+id/navigation_search"
+        android:icon="@drawable/search"
+        android:title="Search" />
+
+    <item
+        android:id="@+id/navigation_my_lists"
+        android:icon="@drawable/my_lists"
+        android:title="My lists" />
+
+    <item
+        android:id="@+id/navigation_aut"
+        android:icon="@drawable/account"
+        android:title="Account" />
+
+</menu>
