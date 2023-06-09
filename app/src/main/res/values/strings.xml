@@ -29,6 +29,7 @@
     <string name="Next_season">Next</string>
     <string name="Custom_season">Custom</string>
     <string name="total_episodes">Total episodes</string>
+    <string name="total_users">Total users</string>
     <string name="start_date">Start date</string>
     <string name="title_activity_account">AccountActivity</string>
     <string name="prompt_email">Email</string>

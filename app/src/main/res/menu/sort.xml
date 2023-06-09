@@ -2,7 +2,7 @@
     <item android:id="@+id/sort_by_rait"
         android:title="⭐️"/>
     <item android:id="@+id/sort_by_userCount"
-        android:title="👤" />
+        android:title="@string/total_users" />
     <item android:id="@+id/sort_by_totalEpisodes"
         android:title="@string/total_episodes" />
     <item android:id="@+id/sort_by_startDate"

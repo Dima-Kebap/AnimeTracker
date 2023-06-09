@@ -188,7 +188,7 @@ class SeasonalAnimeFragment : Fragment(), AnimeAdapter.Listener {
                     sortOrder=true
                     previousMenuItem?.title = previousSort
                     previousMenuItem = item
-                    previousSort = "\uD83D\uDC64"
+                    previousSort = getString(R.string.total_users)
                 }else
                     sortOrder=!sortOrder
                 sort="userCount"
